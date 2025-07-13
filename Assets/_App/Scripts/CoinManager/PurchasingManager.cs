@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using ChuongCustom;
 using UnityEngine;
 
 public class PurchasingManager : MonoBehaviour
@@ -10,19 +11,19 @@ public class PurchasingManager : MonoBehaviour
       {
          case 1:
             GameDataManager.Instance.playerData.AddDiamond(1);
-             IAPManager.Instance.BuyProductID(IAPKey.PACK1);
+             IAPManager.Instance.BuyProductID(IAPKey.C_PACK1);
             break;
          case 2:
             GameDataManager.Instance.playerData.AddDiamond(3);
-            IAPManager.Instance.BuyProductID(IAPKey.PACK2);
+            IAPManager.Instance.BuyProductID(IAPKey.C_PACK1);
             break;
          case 3:
             GameDataManager.Instance.playerData.AddDiamond(5);
-            IAPManager.Instance.BuyProductID(IAPKey.PACK3);
+            IAPManager.Instance.BuyProductID(IAPKey.C_PACK3);
             break;
          case 4:
             GameDataManager.Instance.playerData.AddDiamond(10);
-            IAPManager.Instance.BuyProductID(IAPKey.PACK4);
+            IAPManager.Instance.BuyProductID(IAPKey.C_PACK4);
             break;
       }
    }

@@ -1,3 +1,4 @@
+using ChuongCustom;
 using UnityEngine.UI;
 
 public class ShopDialog : Dialog
@@ -41,42 +42,42 @@ public class ShopDialog : Dialog
 				{
 					GameState.hint.ChangeValue(10);
 				};
-				IAPManager.Instance.BuyProductID(IAPKey.PACK1);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK1);
 				break;
 			case 2:
 				IAPManager.OnPurchaseSuccess = () =>
 				{
 					GameState.hint.ChangeValue(20);
 				};
-				IAPManager.Instance.BuyProductID(IAPKey.PACK2);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK2);
 				break;
 			case 3:
 				IAPManager.OnPurchaseSuccess = () =>
 				{
 					GameState.hint.ChangeValue(60);
 				};				
-				IAPManager.Instance.BuyProductID(IAPKey.PACK3);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK3);
 				break;
 			case 4:
 				IAPManager.OnPurchaseSuccess = () =>
 				{
 					GameState.hint.ChangeValue(100);
 				};				
-				IAPManager.Instance.BuyProductID(IAPKey.PACK4);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK4);
 				break;
 			case 5:
 				IAPManager.OnPurchaseSuccess = () =>
 				{
 					GameState.hint.ChangeValue(200);
 				};				
-				IAPManager.Instance.BuyProductID(IAPKey.PACK5);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK5);
 				break;
 			case 6:
 				IAPManager.OnPurchaseSuccess = () =>
 				{
 					GameState.hint.ChangeValue(400);
 				};				
-				IAPManager.Instance.BuyProductID(IAPKey.PACK6);
+				IAPManager.Instance.BuyProductID(IAPKey.C_PACK6);
 				break;
 		}
 	}
