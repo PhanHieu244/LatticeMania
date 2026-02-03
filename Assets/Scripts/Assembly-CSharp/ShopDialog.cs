@@ -78,6 +78,27 @@ public class ShopDialog : Dialog
 				};				
 				IAPManager.Instance.BuyProductID(IAPKey.PACK6);
 				break;
+			case 7:
+				IAPManager.OnPurchaseSuccess = () =>
+				{
+					GameState.hint.ChangeValue(260);
+				};				
+				IAPManager.Instance.BuyProductID(IAPKey.PACK7);
+				break;
+			case 8:
+				IAPManager.OnPurchaseSuccess = () =>
+				{
+					GameState.hint.ChangeValue(300);
+				};				
+				IAPManager.Instance.BuyProductID(IAPKey.PACK8);
+				break;
+			case 9:
+				IAPManager.OnPurchaseSuccess = () =>
+				{
+					GameState.hint.ChangeValue(360);
+				};				
+				IAPManager.Instance.BuyProductID(IAPKey.PACK9);
+				break;
 		}
 	}
 }
